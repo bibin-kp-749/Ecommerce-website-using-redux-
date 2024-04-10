@@ -1,0 +1,128 @@
+.reg-input{
+    min-width: 20rem;
+    min-height: 3.2rem;
+    color: black;
+}
+.product-card{
+    height: 80vh;
+}
+body{
+    background:white;
+}
+.register-btn{
+    height: 3rem;
+}
+#navbar-section{
+    width: 100%;
+}
+.bg{
+    background-color: #7795a1           ;
+    color: rgb(18, 18, 18);
+  }
+  .addtocart:hover{
+    transform: scale(1.04,1.04);
+    background-color: #456f7f;
+    transition: 2s transform ease-in-out;
+    box-shadow: 0px 12px  20px rgb(210, 210, 210);
+  }
+  .register-btn:hover{
+    transform: scale(1.04,1.04);
+    background-color: #456f7f;
+    transition: 2s transform ease-in-out;
+    box-shadow: 0px 12px  20px rgb(210, 210, 210);
+  }
+  
+.navbar{
+    width: 100%;
+    height: 5rem;
+}
+.header-section{
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.carousel{
+    height: 100vh;
+}
+.home-text{
+    left: 4rem;
+    bottom: 10rem;
+}
+#regipage{
+    width: 100%;
+}
+.regipage-section{
+    width: 90vw;
+}
+.regi-form{
+    width: 50%;
+}
+.regi-img{
+    width: 50%;
+    height: 75%;
+    margin-top: 1.2rem;
+    background-image: url('../assets/RegisterImage/reg-img.jpg');
+    background-size: contain;
+    box-shadow: 1px 1px 20px rgb(192, 198, 192);
+    border-radius: 10px;
+}
+.login-btn {
+    background-color: #7795a1;
+    border-radius: 6px;
+}
+.login-btn:hover{
+   background-color: #395b69;
+}
+.product-nav{
+    z-index: 5;
+}
+.hero-img{
+    max-width: 40rem;
+
+}
+.hero{
+    margin-top: 5rem;
+}
+.hero-img:hover{
+    transform: scale(1.02,1.02);
+    transition: 2s ease-out;
+}
+.purchase-btn{
+    min-width: 40vw;
+    min-height: 7vh;
+    border-radius: 10px;
+    font-size: x-large;
+    font-weight: 800;
+    font-family: monospace;
+    color: white;
+}
+.form-svg{
+    color: #7795a1;
+}
+.card:hover{
+    transform: scale(1.04,1.04);
+    transition: 1s transform ease-in-out;
+    box-shadow: 0px 12px  20px rgb(210, 210, 210);
+}
+.cartbtn{
+    background-color: #7795a1           ;
+    color: rgb(18, 18, 18);
+}
+.loginsvg,.login-heading{
+    color:#38606e ;
+}
+.bottom-btn:hover{
+    transform: scale(1.04,1.04);
+    transition: 1s transform ease-in-out;
+    box-shadow: 0px 12px  20px rgb(210, 210, 210);
+}
+.admin{
+    background-color: #7795a1;
+}
+[aria-label] {
+    font-weight: 600;
+    font-size: large;
+    }
+.addproduct-svg{
+    color: #2b5869;
+}    
