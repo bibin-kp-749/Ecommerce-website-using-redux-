@@ -4,15 +4,15 @@ import { Link } from 'react-router-dom'
 import { deleteProduct, products } from '../App/Thunk/thunk'
 
 const AdminProductCard = () => {
-  const dispatch=useDispatch()
-  const [category, setCategory] = useState("all")
-  const product=useSelector(state=>state.products.product)
-  const Delete =(id) => {
-    dispatch(deleteProduct(id))
+  const dispatch = useDispatch();
+  const [category, setCategory] = useState("all");
+  const product = useSelector(state => state.products.product);
+  const Delete = (id) => {
+    dispatch(deleteProduct(id));
   }
-  useEffect(()=>{
-    dispatch(products())
-  },[])
+  useEffect(() => {
+    dispatch(products());
+  }, [])
   return (
     <div className='w-80 sm:w-full mt-10'>
       <div className='mb-12 overflow-auto no-scrollbar sm:mr-5' >
@@ -38,7 +38,7 @@ const AdminProductCard = () => {
                     <p>{e.caption}</p>
                     <p>{e.price}</p>
                     <div className="card-actions justify-end">
-                    <Link to={`addproduct/${e.id}`}><button className="btn btn-primary" >Edit</button></Link>
+                      <Link to={`addproduct/${e.id}`}><button className="btn btn-primary" >Edit</button></Link>
                       <button className="btn btn-primary" onClick={() => Delete(e.id)}>Delete</button>
                     </div>
                   </div>

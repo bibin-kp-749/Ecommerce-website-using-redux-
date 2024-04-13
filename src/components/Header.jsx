@@ -5,8 +5,8 @@ import NavLink from './NavLink'
 const Header = () => {
   return (
     <div className='header-section z-50'>
-      <Navbar/>
-      <NavLink/>
+      <Navbar />
+      <NavLink />
     </div>
   )
 }

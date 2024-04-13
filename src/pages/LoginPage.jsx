@@ -9,7 +9,7 @@ const LoginPage = () => {
                     <h1 className='login-heading text-2xl font-semibold'>Login</h1>
                 </div>
                 <div className='flex justify-center'>
-                        <LoginForm />
+                    <LoginForm />
                 </div>
             </div>
         </div>

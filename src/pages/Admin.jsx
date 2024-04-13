@@ -6,12 +6,12 @@ import { useNavigate } from 'react-router-dom'
 import '../css/component.css'
 
 const Admin = () => {
-    const navigate=useNavigate()
-    const Logout=()=>{
+    const navigate = useNavigate();
+    const Logout = () => {
         localStorage.removeItem('id');
-        localStorage.removeItem('name')
-        navigate('/')
-        window.location.reload()
+        localStorage.removeItem('name');
+        navigate('/');
+        window.location.reload();
     }
     return (
         <div className='admin min-h-screen w-screen'>
@@ -21,19 +21,19 @@ const Admin = () => {
             <div role="tablist" className="tabs tabs-lifted ">
                 <input type="radio" name="my_tabs_2" role="tab" className="tab min-h-14 min-w-32" aria-label="USERS" />
                 <div role="tabpanel" className="tab-content bg-gray-100 text-black rounded-box p-6 min-h-screen w-96 sm:max-w-max md:min-w-full" >
-                    <Table/>
+                    <Table />
                 </div>
 
-                <input type="radio" name="my_tabs_2" role="tab" className="tab min-h-14 min-w-32" aria-label="PRODUCTS"  checked/>
+                <input type="radio" name="my_tabs_2" role="tab" className="tab min-h-14 min-w-32" aria-label="PRODUCTS" checked />
                 <div role="tabpanel" className="tab-content  bg-gray-100 text-black rounded-box p-6 min-h-screen ">
                     <h1 className='font-semibold text-xl text-gray-700 mt-5'>PRODUCTS</h1>
-                <AdminProductCard/>
+                    <AdminProductCard />
                 </div>
 
                 <input type="radio" name="my_tabs_2" role="tab" className="tab min-h-14 min-w-32" aria-label="ADD PRODUCTS" />
                 <div role="tabpanel" className="tab-content  bg-gray-100 text-black  rounded-box p-6 min-h-screen sm:w-screen md:min-w-full ">
-                <h1 className='font-semibold text-xl text-gray-700 mt-5'>ADD PRODUCTS</h1>
-                <AddProduct/>
+                    <h1 className='font-semibold text-xl text-gray-700 mt-5'>ADD PRODUCTS</h1>
+                    <AddProduct />
                 </div>
             </div>
         </div>

@@ -4,7 +4,7 @@ import '../css/component.css'
 
 const RegisterPage = () => {
     return (
-        <div id='regipage ' className='flex justify-center flex-col flex-wrap' style={{marginTop:'11rem'}}>
+        <div id='regipage ' className='flex justify-center flex-col flex-wrap' style={{ marginTop: '11rem' }}>
             <div className='mb-10  text-black'>
                 <h1 className='font-semibold text-gray-600 text-2xl'>Register</h1>
             </div>

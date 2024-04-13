@@ -8,10 +8,10 @@ import { useDispatch } from 'react-redux'
 import { searchItem } from '../App/Slice/searchSlice'
 
 const Navbar = () => {
-    const dispatch=useDispatch()
-    let name = localStorage.getItem('name')
-    const navigate = useNavigate()
-    const id = localStorage.getItem('id')
+    const dispatch = useDispatch();
+    let name = localStorage.getItem('name');
+    const navigate = useNavigate();
+    const id = localStorage.getItem('id');
     return (
         <div id='navbar-section p-0' className={`${(id == '0001') ? 'hidden' : ''}`}>
             <div className="navbar  flex bg ">
@@ -56,7 +56,7 @@ const Navbar = () => {
                                     <span className="badge">New</span>
                                 </a>
                             </li>
-                            <li><div >  
+                            <li><div >
                                 <a className="w-24 h-2 flex items-center   font-medium  rounded-lg mb-1 mt-3" onClick={id ? () => {
                                     localStorage.removeItem('name');
                                     localStorage.removeItem('id');

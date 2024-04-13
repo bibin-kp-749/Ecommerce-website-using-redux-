@@ -1,7 +1,7 @@
 import React from 'react'
 import '../css/component.css'
 
-const Cards = ({value}) => {
+const Cards = ({ value }) => {
     return (
         <div >
             <div className="card product-card  w-72 glass p-0 m-5 ">

@@ -1,15 +1,15 @@
-import React, { useContext, useEffect} from 'react'
+import React, { useContext, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { products } from '../App/Thunk/thunk'
 
 const Search = () => {
-    const dispatch=useDispatch()
-    const  values=useSelector(state=>state.products.product)
-    const search=useSelector(state=>state.search.search)
-    const navigate = useNavigate()
+    const dispatch = useDispatch();
+    const values = useSelector(state => state.products.product);
+    const search = useSelector(state => state.search.search);
+    const navigate = useNavigate();
     useEffect(() => {
-        dispatch(products())
+        dispatch(products());
     }, [])
     return (
         <div className='flex flex-wrap justify-evenly mt-24'>
